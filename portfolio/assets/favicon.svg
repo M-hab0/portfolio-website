@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9dff2f"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)"/>
+  <!-- MH monogram -->
+  <g fill="#07070b" filter="url(#glow)">
+    <!-- M -->
+    <path d="M 12 46 L 12 18 L 18 18 L 24 32 L 30 18 L 36 18 L 36 46 L 31 46 L 31 28 L 26 40 L 22 40 L 17 28 L 17 46 Z"/>
+    <!-- H -->
+    <path d="M 40 46 L 40 18 L 45 18 L 45 29 L 52 29 L 52 18 L 57 18 L 57 46 L 52 46 L 52 34 L 45 34 L 45 46 Z"/>
+  </g>
+</svg>

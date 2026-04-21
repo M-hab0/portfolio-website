@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Mahdi Habibi — Frontend Developer | HTML, CSS, SASS, JS</title>
+    <meta
+      name="title"
+      content="Mahdi Habibi — Frontend Developer | HTML, CSS, SASS, JS"
+    />
+    <meta
+      name="description"
+      content="Frontend Developer crafting modern, responsive, pixel-perfect websites. 2+ years of experience with HTML, CSS, SASS and JavaScript. Available for freelance projects."
+    />
+    <meta name="author" content="Mahdi Habibi" />
+    <meta
+      name="keywords"
+      content="Frontend Developer, Web Developer, HTML, CSS, SASS, JavaScript, Portfolio, Mahdi Habibi, Freelance Developer, Turkey Developer, Responsive Web Design"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="theme-color" content="#9dff2f" />
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mahdi-habibi.dev/" />
+    <meta property="og:title" content="Mahdi Habibi — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Frontend Developer crafting modern, responsive, pixel-perfect websites. HTML, CSS, SASS, JavaScript."
+    />
+    <meta
+      property="og:image"
+      content="https://mahdi-habibi.dev/assets/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Mahdi Habibi Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mahdi-habibi.dev/" />
+    <meta name="twitter:title" content="Mahdi Habibi — Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Frontend Developer crafting modern, responsive, pixel-perfect websites."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mahdi-habibi.dev/assets/og-image.png"
+    />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://mahdi-habibi.dev/" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon-192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mahdi Habibi",
+        "jobTitle": "Frontend Developer",
+        "description": "Frontend Developer specializing in HTML, CSS, SASS and JavaScript",
+        "url": "https://mahdi-habibi.dev",
+        "image": "https://mahdi-habibi.dev/assets/images/profile.jpeg",
+        "telephone": "+905431483171",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Turkey"
+        },
+        "sameAs": [
+          "https://www.instagram.com/mehab0__786/",
+          "https://www.linkedin.com/in/mahdi-habibi786"
+        ],
+        "knowsAbout": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "JavaScript",
+          "Responsive Web Design",
+          "Frontend Development"
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts: Space Grotesk replaced with distinctive pair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Satoshi:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fallback premium fonts (Clash Display / Satoshi via fontshare) -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=satoshi@300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons (SVG icons) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ============== CUSTOM CURSOR ============== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- ============== NOISE OVERLAY ============== -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- ============== ANIMATED 3D BACKGROUND ORBS ============== -->
+    <div class="bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ============== SCROLL PROGRESS BAR ============== -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- ============== HEADER / NAVBAR ============== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-mark">M</span>
+          <span class="nav__logo-text"
+            >ahdi<span class="nav__logo-dot">.</span></span
+          >
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link"
+                ><span class="nav__link-num">01</span>Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"
+                ><span class="nav__link-num">02</span>About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"
+                ><span class="nav__link-num">03</span>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link"
+                ><span class="nav__link-num">04</span>Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#testimonials" class="nav__link"
+                ><span class="nav__link-num">05</span>Testimonials</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"
+                ><span class="nav__link-num">06</span>Contact</a
+              >
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close" aria-label="Close menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+        </div>
+
+        <a href="#contact" class="nav__cta">
+          <span>Let's Talk</span>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- ============== HERO ============== -->
+      <section class="hero section" id="home">
+        <div class="hero__grid container">
+          <div class="hero__content">
+            <div class="hero__badge" data-parallax="0.2">
+              <span class="hero__badge-dot"></span>
+              <span>Available for new projects</span>
+            </div>
+
+            <h1 class="hero__title">
+              <span class="hero__title-line">Frontend</span>
+              <span class="hero__title-line hero__title-gradient"
+                >Developer</span
+              >
+              <span class="hero__title-line hero__title-small">
+                <span class="hero__title-amp">&amp;</span>
+                UI Craftsman
+              </span>
+            </h1>
+
+            <p class="hero__description">
+              Hi, I'm <strong>Mahdi Habibi</strong> — I design and build fast,
+              pixel-perfect, and highly responsive web interfaces. Turning ideas
+              into clean, accessible, and beautiful code is what I do best.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">
+                <span>View My Work</span>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+              </a>
+              <a href="#contact" class="btn btn--ghost">
+                <span>Get in Touch</span>
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+              <a
+                href="assets/Mahdi-Habibi-CV.pdf"
+                download
+                class="btn btn--outline"
+              >
+                <span>Download CV</span>
+                <ion-icon name="download-outline"></ion-icon>
+              </a>
+            </div>
+
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <h3 class="hero__stat-num" data-count="2">0</h3>
+                <span class="hero__stat-plus">+</span>
+                <p class="hero__stat-label">Years<br />Experience</p>
+              </div>
+              <div class="hero__stat">
+                <h3 class="hero__stat-num" data-count="4">0</h3>
+                <span class="hero__stat-plus">+</span>
+                <p class="hero__stat-label">Projects<br />Completed</p>
+              </div>
+              <div class="hero__stat">
+                <h3 class="hero__stat-num" data-count="100">0</h3>
+                <span class="hero__stat-plus">%</span>
+                <p class="hero__stat-label">Client<br />Focused</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" data-parallax="-0.15">
+            <div class="hero__image-wrap">
+              <div class="hero__image-glow"></div>
+              <div class="hero__image-ring"></div>
+              <div class="hero__image-frame">
+                <picture>
+                  <source
+                    srcset="assets/images/profile.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/profile.jpeg"
+                    alt="Mahdi Habibi portrait"
+                    class="hero__image"
+                    width="400"
+                    height="400"
+                  />
+                </picture>
+              </div>
+              <div class="hero__floating hero__floating--1">
+                <ion-icon name="logo-html5"></ion-icon>
+              </div>
+              <div class="hero__floating hero__floating--2">
+                <ion-icon name="logo-css3"></ion-icon>
+              </div>
+              <div class="hero__floating hero__floating--3">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </div>
+              <div class="hero__floating hero__floating--4">
+                <ion-icon name="logo-sass"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="hero__scroll" aria-label="Scroll down">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"><span></span></div>
+        </a>
+      </section>
+
+      <!-- ============== ABOUT ============== -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow"
+              ><span class="section__eyebrow-num">02</span> About Me</span
+            >
+            <h2 class="section__title">
+              A developer who <em>loves</em><br />
+              clean code &amp; great design.
+            </h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text">
+              <p class="about__lead">
+                I'm a passionate Frontend Developer specializing in building
+                modern, responsive websites that look great on every device.
+              </p>
+              <p>
+                With over <strong>2 years of experience</strong>, I've worked on
+                a variety of real-world projects — from business landing pages
+                and e-commerce stores to restaurant and clinic websites. I care
+                deeply about clean code, smooth animations, and user experience.
+              </p>
+              <p>
+                My toolkit includes <strong>HTML5, CSS3, SASS,</strong> and
+                <strong>JavaScript</strong>, and I'm always learning something
+                new to push my craft forward.
+              </p>
+
+              <div class="about__info">
+                <div class="about__info-item">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <div>
+                    <span>Name</span>
+                    <p>Mahdi Habibi</p>
+                  </div>
+                </div>
+                <div class="about__info-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  <div>
+                    <span>Role</span>
+                    <p>Frontend Developer</p>
+                  </div>
+                </div>
+                <div class="about__info-item">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <div>
+                    <span>Phone</span>
+                    <p>+90 543 148 3171</p>
+                  </div>
+                </div>
+                <div class="about__info-item">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  <div>
+                    <span>Availability</span>
+                    <p>Open to work</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__card" data-parallax="-0.08">
+              <div class="about__card-glow"></div>
+              <div class="about__card-inner">
+                <div class="about__card-header">
+                  <div class="about__card-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="about__card-file">mahdi.js</span>
+                </div>
+                <pre
+                  class="about__card-code"
+                ><code><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Mahdi Habibi'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Frontend Developer'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>, <span class="c-str">'SASS'</span>, <span class="c-str">'JS'</span>],
+  <span class="c-prop">experience</span>: <span class="c-num">2</span>,
+  <span class="c-prop">projects</span>: <span class="c-num">4</span>,
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>,
+  <span class="c-prop">hireMe</span>() {
+    <span class="c-key">return</span> <span class="c-str">'Let\'s build something great 🚀'</span>;
+  },
+};</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== SKILLS ============== -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow"
+              ><span class="section__eyebrow-num">03</span> My Skills</span
+            >
+            <h2 class="section__title">
+              Technologies I <em>work</em><br />
+              with every day.
+            </h2>
+          </div>
+
+          <div class="skills__grid">
+            <article class="skill-card" data-skill="95">
+              <div class="skill-card__icon skill-card__icon--html">
+                <ion-icon name="logo-html5"></ion-icon>
+              </div>
+              <h3 class="skill-card__title">HTML5</h3>
+              <p class="skill-card__desc">
+                Semantic, accessible markup that forms the backbone of every
+                project.
+              </p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--w: 95%"></div>
+              </div>
+              <span class="skill-card__percent">95%</span>
+            </article>
+
+            <article class="skill-card" data-skill="92">
+              <div class="skill-card__icon skill-card__icon--css">
+                <ion-icon name="logo-css3"></ion-icon>
+              </div>
+              <h3 class="skill-card__title">CSS3</h3>
+              <p class="skill-card__desc">
+                Modern layouts with Flexbox, Grid, animations and custom
+                properties.
+              </p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--w: 92%"></div>
+              </div>
+              <span class="skill-card__percent">92%</span>
+            </article>
+
+            <article class="skill-card" data-skill="88">
+              <div class="skill-card__icon skill-card__icon--sass">
+                <ion-icon name="logo-sass"></ion-icon>
+              </div>
+              <h3 class="skill-card__title">SASS</h3>
+              <p class="skill-card__desc">
+                Structured, maintainable stylesheets using variables, mixins and
+                nesting.
+              </p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--w: 88%"></div>
+              </div>
+              <span class="skill-card__percent">88%</span>
+            </article>
+
+            <article class="skill-card" data-skill="85">
+              <div class="skill-card__icon skill-card__icon--js">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </div>
+              <h3 class="skill-card__title">JavaScript</h3>
+              <p class="skill-card__desc">
+                Interactive, dynamic UIs with ES6+, DOM manipulation and clean
+                logic.
+              </p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--w: 85%"></div>
+              </div>
+              <span class="skill-card__percent">85%</span>
+            </article>
+
+            <article class="skill-card" data-skill="90">
+              <div class="skill-card__icon skill-card__icon--responsive">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <h3 class="skill-card__title">Responsive Design</h3>
+              <p class="skill-card__desc">
+                Mobile-first layouts that look and feel perfect on every screen
+                size.
+              </p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--w: 90%"></div>
+              </div>
+              <span class="skill-card__percent">90%</span>
+            </article>
+
+            <article class="skill-card" data-skill="87">
+              <div class="skill-card__icon skill-card__icon--git">
+                <ion-icon name="git-branch-outline"></ion-icon>
+              </div>
+              <h3 class="skill-card__title">Git &amp; Workflow</h3>
+              <p class="skill-card__desc">
+                Version control, branching, deployment and a clean development
+                process.
+              </p>
+              <div class="skill-card__bar">
+                <div class="skill-card__bar-fill" style="--w: 87%"></div>
+              </div>
+              <span class="skill-card__percent">87%</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== PROJECTS ============== -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow"
+              ><span class="section__eyebrow-num">04</span> My Work</span
+            >
+            <h2 class="section__title">
+              Selected <em>projects</em><br />
+              I've built recently.
+            </h2>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <picture>
+                  <source
+                    srcset="assets/images/project-salon.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/project-salon.jpeg"
+                    alt="Veloura Hair Salon website"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="600"
+                    height="375"
+                  />
+                </picture>
+                <div class="project-card__overlay">
+                  <a
+                    href="https://hab0-hair-salon.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-card__link"
+                    aria-label="Visit Veloura live site"
+                  >
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__num">01 / 04</span>
+                <h3 class="project-card__title">Veloura — Hair Salon</h3>
+                <p class="project-card__desc">
+                  An elegant landing page for a luxury hair salon — dark
+                  aesthetic with gold accents and smooth scroll experience.
+                </p>
+                <div class="project-card__tags">
+                  <span>HTML</span>
+                  <span>SCSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <a
+                  href="https://hab0-hair-salon.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__cta"
+                >
+                  <span>Live Demo</span>
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <picture>
+                  <source
+                    srcset="assets/images/project-dental.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/project-dental.jpeg"
+                    alt="DentaCare Dental Clinic website"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="600"
+                    height="375"
+                  />
+                </picture>
+                <div class="project-card__overlay">
+                  <a
+                    href="https://hab0-dental-clinic.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-card__link"
+                    aria-label="Visit DentaCare live site"
+                  >
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__num">02 / 04</span>
+                <h3 class="project-card__title">DentaCare — Dental Clinic</h3>
+                <p class="project-card__desc">
+                  A clean, trustworthy dental clinic website with an appointment
+                  booking flow and bright, welcoming visuals.
+                </p>
+                <div class="project-card__tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <a
+                  href="https://hab0-dental-clinic.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__cta"
+                >
+                  <span>Live Demo</span>
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <picture>
+                  <source
+                    srcset="assets/images/project-restaurant.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/project-restaurant.jpeg"
+                    alt="Form Shopping e-commerce website"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="600"
+                    height="375"
+                  />
+                </picture>
+                <div class="project-card__overlay">
+                  <a
+                    href="https://hab0-form-shopping.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-card__link"
+                    aria-label="Visit Form Shopping live site"
+                  >
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__num">03 / 04</span>
+                <h3 class="project-card__title">FORM — Fashion Store</h3>
+                <p class="project-card__desc">
+                  A minimal, editorial-style e-commerce landing page for a
+                  premium organic cotton clothing brand.
+                </p>
+                <div class="project-card__tags">
+                  <span>HTML</span>
+                  <span>SCSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <a
+                  href="https://hab0-form-shopping.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__cta"
+                >
+                  <span>Live Demo</span>
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrap">
+                <picture>
+                  <source
+                    srcset="assets/images/project-shop.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/project-shop.jpeg"
+                    alt="Sultan Turkish Restaurant website"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="600"
+                    height="375"
+                  />
+                </picture>
+                <div class="project-card__overlay">
+                  <a
+                    href="https://hab0-restaurant.netlify.app/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-card__link"
+                    aria-label="Visit Sultan Restaurant live site"
+                  >
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <span class="project-card__num">04 / 04</span>
+                <h3 class="project-card__title">Sultan — Turkish Restaurant</h3>
+                <p class="project-card__desc">
+                  A rich, appetizing menu experience for a traditional Turkish
+                  restaurant, with filters and a bilingual interface.
+                </p>
+                <div class="project-card__tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+                <a
+                  href="https://hab0-restaurant.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="project-card__cta"
+                >
+                  <span>Live Demo</span>
+                  <ion-icon name="open-outline"></ion-icon>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== TESTIMONIALS ============== -->
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow"
+              ><span class="section__eyebrow-num">05</span> Testimonials</span
+            >
+            <h2 class="section__title">
+              What clients <em>say</em><br />
+              about working with me.
+            </h2>
+          </div>
+
+          <div class="testimonials__grid">
+            <article class="testimonial">
+              <div class="testimonial__quote-icon">
+                <ion-icon name="chatbubble-ellipses"></ion-icon>
+              </div>
+              <div class="testimonial__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="testimonial__text">
+                Working with Mahdi was a great experience from start to finish.
+                He understood exactly what I needed and delivered a clean, fast
+                website that my customers love. Highly professional and
+                detail-oriented throughout the whole process.
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar">EM</div>
+                <div>
+                  <h4>Emir Can</h4>
+                  <span>Business Owner</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__quote-icon">
+                <ion-icon name="chatbubble-ellipses"></ion-icon>
+              </div>
+              <div class="testimonial__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="testimonial__text">
+                Mahdi built our website with great attention to detail. The
+                result was better than we imagined — modern, responsive and very
+                easy to navigate. Communication was smooth and he delivered on
+                time. Would absolutely recommend.
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar">NI</div>
+                <div>
+                  <h4>Nilan Ibrahim</h4>
+                  <span>Entrepreneur</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial">
+              <div class="testimonial__quote-icon">
+                <ion-icon name="chatbubble-ellipses"></ion-icon>
+              </div>
+              <div class="testimonial__stars">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="testimonial__text">
+                I was skeptical at first, but Mahdi completely won me over. He
+                brought fresh ideas, coded everything cleanly, and the final
+                site looks stunning. Best investment I made for my business this
+                year.
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar">AL</div>
+                <div>
+                  <h4>Alex Larsen</h4>
+                  <span>E-commerce Owner</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============== CONTACT ============== -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section__header">
+            <span class="section__eyebrow"
+              ><span class="section__eyebrow-num">06</span> Get in Touch</span
+            >
+            <h2 class="section__title">
+              Have a project in mind?<br />
+              Let's <em>work</em> together.
+            </h2>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__info">
+              <p class="contact__lead">
+                I'm currently available for freelance projects and full-time
+                roles. Drop me a message and I'll get back to you within 24
+                hours.
+              </p>
+
+              <div class="contact__items">
+                <a href="tel:+905431483171" class="contact__item">
+                  <div class="contact__item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+                  <div class="contact__item-text">
+                    <span>Phone</span>
+                    <p>+90 543 148 3171</p>
+                  </div>
+                  <ion-icon
+                    class="contact__item-arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </a>
+
+                <a
+                  href="https://wa.me/905431483171"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__item"
+                >
+                  <div class="contact__item-icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </div>
+                  <div class="contact__item-text">
+                    <span>WhatsApp</span>
+                    <p>Chat with me instantly</p>
+                  </div>
+                  <ion-icon
+                    class="contact__item-arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/mehab0__786/"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__item"
+                >
+                  <div class="contact__item-icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </div>
+                  <div class="contact__item-text">
+                    <span>Instagram</span>
+                    <p>@mehab0__786</p>
+                  </div>
+                  <ion-icon
+                    class="contact__item-arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/mahdi-habibi786"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact__item"
+                >
+                  <div class="contact__item-icon">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </div>
+                  <div class="contact__item-text">
+                    <span>LinkedIn</span>
+                    <p>mahdi-habibi786</p>
+                  </div>
+                  <ion-icon
+                    class="contact__item-arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <!-- 
+            To enable real email delivery:
+            1. Sign up at https://formspree.io (free)
+            2. Create a new form and get your form ID
+            3. Replace "YOUR_FORMSPREE_ID" below with your actual ID
+            4. The form will send real emails + also open WhatsApp as backup
+          -->
+            <form
+              class="contact__form"
+              id="contact-form"
+              action="https://formspree.io/f/xgorzpqp"
+              method="POST"
+              novalidate
+            >
+              <div class="contact__form-glow"></div>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project inquiry"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              <!-- Honeypot for spam protection -->
+              <input
+                type="text"
+                name="_gotcha"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
+              <button type="submit" class="btn btn--primary btn--block">
+                <span>Send Message</span>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </button>
+              <p
+                class="contact__form-consent"
+                style="
+                  text-align: center;
+                  font-size: 0.75rem;
+                  color: #8b8da0;
+                  margin-top: 0.875rem;
+                "
+              >
+                By submitting this form, you agree to our
+                <a href="privacy.html" style="color: #9dff2f">Privacy Policy</a
+                >.
+              </p>
+              <p class="contact__form-note" id="form-note"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__top">
+          <a href="#home" class="footer__logo">
+            <span class="footer__logo-mark">M</span>
+            <span>Mahdi Habibi</span>
+          </a>
+
+          <ul class="footer__nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+
+          <div class="footer__social">
+            <a
+              href="https://www.instagram.com/mehab0__786/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://wa.me/905431483171"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mahdi-habibi786"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="tel:+905431483171" aria-label="Phone">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            &copy; <span id="year">2026</span> Mahdi Habibi. Crafted with
+            <ion-icon name="heart"></ion-icon> and clean code.
+          </p>
+          <a href="#home" class="footer__top-btn" aria-label="Back to top">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============== JS ============== -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

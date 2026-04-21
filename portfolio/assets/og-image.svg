@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07070b"/>
+      <stop offset="100%" stop-color="#0d0d14"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="30%">
+      <stop offset="0%" stop-color="#9dff2f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#9dff2f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9dff2f"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="473" x2="1200" y2="473"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+  
+  <!-- Logo mark -->
+  <rect x="80" y="80" width="72" height="72" rx="14" fill="url(#accent)"/>
+  <text x="116" y="132" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" fill="#07070b" text-anchor="middle">M</text>
+  
+  <!-- Logo text -->
+  <text x="170" y="132" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#ffffff">Mahdi Habibi</text>
+  
+  <!-- Badge -->
+  <rect x="80" y="200" width="280" height="40" rx="20" fill="#9dff2f" fill-opacity="0.1" stroke="#9dff2f" stroke-width="1"/>
+  <circle cx="100" cy="220" r="5" fill="#9dff2f"/>
+  <text x="115" y="226" font-family="Arial, sans-serif" font-size="14" fill="#9dff2f" font-weight="500">AVAILABLE FOR NEW PROJECTS</text>
+  
+  <!-- Main title -->
+  <text x="80" y="320" font-family="Arial Black, sans-serif" font-size="96" font-weight="900" fill="#eef0f5">Frontend</text>
+  <text x="80" y="420" font-family="Arial Black, sans-serif" font-size="96" font-weight="900" font-style="italic" fill="url(#accent)">Developer.</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="480" font-family="Arial, sans-serif" font-size="24" fill="#8b8da0">Crafting modern, responsive &amp; pixel-perfect web experiences</text>
+  
+  <!-- Tech stack -->
+  <g font-family="monospace" font-size="18" fill="#8b8da0">
+    <rect x="80" y="520" width="90" height="40" rx="20" fill="#12121a" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="125" y="545" text-anchor="middle">HTML</text>
+    
+    <rect x="180" y="520" width="80" height="40" rx="20" fill="#12121a" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="220" y="545" text-anchor="middle">CSS</text>
+    
+    <rect x="270" y="520" width="90" height="40" rx="20" fill="#12121a" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="315" y="545" text-anchor="middle">SASS</text>
+    
+    <rect x="370" y="520" width="140" height="40" rx="20" fill="#12121a" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="440" y="545" text-anchor="middle">JavaScript</text>
+  </g>
+  
+  <!-- Right side decoration - circle -->
+  <circle cx="950" cy="315" r="180" fill="none" stroke="url(#accent)" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="950" cy="315" r="140" fill="none" stroke="#9dff2f" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="950" cy="135" r="10" fill="#9dff2f"/>
+  <circle cx="950" cy="495" r="10" fill="#00e5ff"/>
+  
+  <!-- Code brackets -->
+  <text x="950" y="345" font-family="monospace" font-size="120" font-weight="700" fill="url(#accent)" text-anchor="middle">&lt;/&gt;</text>
+  
+  <!-- URL at bottom -->
+  <text x="1120" y="595" font-family="monospace" font-size="16" fill="#5a5d75" text-anchor="end">mahdi-habibi.dev</text>
+</svg>

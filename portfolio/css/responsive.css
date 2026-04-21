@@ -1,0 +1,384 @@
+/* =============================================
+   RESPONSIVE / MEDIA QUERIES
+   Breakpoints (using rem — 1rem = 16px):
+     - Large desktop: up to 1280px (80rem)
+     - Desktop:       up to 1080px (67.5rem)
+     - Tablet:        up to 900px  (56.25rem)
+     - Mobile large:  up to 720px  (45rem)
+     - Mobile:        up to 520px  (32.5rem)
+     - Small mobile:  up to 380px  (23.75rem)
+============================================= */
+
+
+/* =========================================
+   LARGE DESKTOP — up to 1280px
+========================================= */
+@media screen and (max-width: 80rem) {
+  :root {
+    --fs-hero: 5.5rem;
+    --fs-4xl: 4rem;
+    --fs-3xl: 3rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .hero__grid {
+    gap: 3rem;
+  }
+}
+
+
+/* =========================================
+   DESKTOP — up to 1080px
+========================================= */
+@media screen and (max-width: 67.5rem) {
+  :root {
+    --fs-hero: 4.5rem;
+    --fs-4xl: 3.5rem;
+    --fs-3xl: 2.75rem;
+    --fs-2xl: 2rem;
+  }
+
+  .section {
+    padding: 6rem 0;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 3rem;
+  }
+
+  .hero__visual {
+    order: -1;
+  }
+
+  .hero__image-wrap {
+    width: 18rem;
+  }
+
+  .hero__stats {
+    gap: 2rem;
+  }
+
+  .about__grid,
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about__card {
+    order: -1;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav__list {
+    gap: 1.5rem;
+  }
+
+  .hero__floating {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+/* =========================================
+   TABLET — up to 900px
+========================================= */
+@media screen and (max-width: 56.25rem) {
+  :root {
+    --header-height: 4.5rem;
+    --fs-hero: 3.75rem;
+  }
+
+  /* Mobile menu */
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(100%, 22rem);
+    height: 100vh;
+    background: var(--color-bg-alt);
+    border-left: 1px solid var(--color-border);
+    padding: 6rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: right var(--dur-normal) var(--ease-smooth);
+    z-index: 99;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .nav__menu.is-open {
+    right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 1.75rem;
+    align-items: flex-start;
+  }
+
+  .nav__link {
+    font-size: var(--fs-lg);
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__toggle.is-active span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .nav__toggle.is-active span:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about__info {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   MOBILE LARGE — up to 720px
+========================================= */
+@media screen and (max-width: 45rem) {
+  :root {
+    --fs-hero: 3rem;
+    --fs-4xl: 2.5rem;
+    --fs-3xl: 2.25rem;
+    --fs-2xl: 1.75rem;
+    --fs-xl: 1.375rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .hero__stats {
+    gap: 1.5rem;
+  }
+
+  .hero__stat {
+    flex-direction: column;
+  }
+
+  .hero__stat-label {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero__badge {
+    font-size: var(--fs-xs);
+  }
+
+  .hero__image-wrap {
+    width: 15rem;
+  }
+
+  .hero__floating {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .about__card-inner {
+    transform: none;
+  }
+
+  .about__card-code {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+
+  .contact__form {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .footer__nav {
+    justify-content: center;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   MOBILE — up to 520px
+========================================= */
+@media screen and (max-width: 32.5rem) {
+  :root {
+    --fs-hero: 2.5rem;
+    --fs-3xl: 1.875rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section__header {
+    margin-bottom: 3rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + 2rem);
+    padding-bottom: 4rem;
+  }
+
+  .hero__title-small {
+    font-size: 0.7em;
+  }
+
+  .hero__description {
+    font-size: var(--fs-base);
+  }
+
+  .hero__stats {
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .hero__stat-num {
+    font-size: 1.75rem;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  .contact__item {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .contact__item-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .project-card__body {
+    padding: 1.25rem;
+  }
+
+  .skill-card {
+    padding: 1.5rem;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE — up to 380px
+========================================= */
+@media screen and (max-width: 23.75rem) {
+  :root {
+    --fs-hero: 2.25rem;
+  }
+
+  .container {
+    padding: 0 0.875rem;
+  }
+
+  .hero__image-wrap {
+    width: 13rem;
+  }
+
+  .hero__floating {
+    display: none;
+  }
+
+  .nav__logo-text {
+    display: none;
+  }
+
+  .section__eyebrow {
+    font-size: var(--fs-xs);
+    padding: 0.35rem 0.75rem;
+  }
+}
+
+
+/* =========================================
+   LANDSCAPE PHONES — short height
+========================================= */
+@media screen and (max-height: 37.5rem) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 7rem 0 4rem;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   HIGH-RES / RETINA
+========================================= */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__image {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
